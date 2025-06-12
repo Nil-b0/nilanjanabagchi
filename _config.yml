@@ -18,6 +18,7 @@ repository:
   branch: master
 
 html:
+  theme: journal
   use_issues_button: true
   use_repository_button: true
 
