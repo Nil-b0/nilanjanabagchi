@@ -42,12 +42,26 @@
     a:hover {
       text-decoration: underline;
     }
-    .project {
-      margin: 1.5rem 0;
-      padding: 1rem;
-      background: #ffffff;
-      border-left: 5px solid #007bff;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    .button-group {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #001f3f; /* Navy blue */
+      background: transparent;
+      color: #001f3f;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #001f3f;
+      color: white;
     }
     footer {
       margin-top: 4rem;
@@ -65,20 +79,11 @@
     <p>I'm a physics undergrad doing independent research in cosmology, developing novel Python libraries, and teaching coding on the side. This page showcases my ongoing projects, publications, and tools.</p>
 
     <h2>🔬 Featured Work</h2>
-
-    <div class="project">
-      <h3><a href="project1.html">Non-Standard Techniques in Cosmology</a></h3>
-      <p>A new approach to [insert cool cosmology problem here], developed using Python and tested against existing models. Paper under review.</p>
-    </div>
-
-    <div class="project">
-      <h3><a href="project2.html">Python Library: `astro-utils`</a></h3>
-      <p>A lightweight library for symbolic manipulation and numerical simulation of cosmological models. Open source and under active development.</p>
-    </div>
-
-    <div class="project">
-      <h3><a href="teaching.html">Workshops & Teaching</a></h3>
-      <p>Courses, crash sessions, and peer-learning modules I've run — everything from Python basics to real-world debugging.</p>
+    <div class="button-group">
+      <a href="#" class="btn">Dark Energy</a>
+      <a href="https://nil-b0.github.io/GaussianProcess/" class="btn">Gaussian Process</a>
+      <a href="#" class="btn">Quantum Mechanics</a>
+      <a href="#" class="btn">Gamma Ray Bursts</a>
     </div>
 
     <footer>
@@ -87,4 +92,97 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nilanjana Bagchi | Research Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #343a40;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #495057;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button-group {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #001f3f; /* Navy blue */
+      background: transparent;
+      color: #001f3f;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #001f3f;
+      color: white;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #868e96;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Nilanjana Bagchi</h1>
+    <p>Cosmology Researcher | Python Nerd | Occasional Firestarter</p>
 
+    <p>I'm a physics undergrad doing independent research in cosmology, developing novel Python libraries, and teaching coding on the side. This page showcases my ongoing projects, publications, and tools.</p>
+
+    <h2>🔬 Featured Work</h2>
+    <div class="button-group">
+      <a href="#" class="btn">Dark Energy</a>
+      <a href="https://nil-b0.github.io/GaussianProcess/" class="btn">Gaussian Process</a>
+      <a href="#" class="btn">Quantum Mechanics</a>
+      <a href="#" class="btn">Gamma Ray Bursts</a>
+    </div>
+
+    <footer>
+      &copy; 2025 Nilanjana Bagchi — Powered by GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
