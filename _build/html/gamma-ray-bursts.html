@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gamma Ray Bursts | Nilanjana Bagchi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
+    }
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/b/b9/W5_cropped.jpg') center center / cover no-repeat;
+    }
+    .banner::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #343a40;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      color: #495057;
+    }
+    ul {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.8rem;
+    }
+    p {
+      margin: 1rem 0;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #868e96;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner"></div>
+  <div class="container">
+    <h1>Gamma Ray Bursts</h1>
+
+    <p>Working on Gamma-Ray Bursts (GRBs) and their relation to cosmological parameters.</p>
+    <ul>
+      <li>Utilizing Machine Learning, Gaussian Processes, Bayesian Statistics, and Markov Chain Monte Carlo Simulations to analyze observational Hubble and Pantheon+ data</li>
+      <li>Using Python libraries (<strong>GaPP</strong>, <strong>Astropy</strong>, <strong>Cobaya</strong>) for computational astrophysics</li>
+    </ul>
+
+    <h2>GRB Luminosity Function Analysis</h2>
+    <p>As of December 2023, over <strong>1600 GRBs</strong> have been detected by the Swift satellite. From this, we select <strong>307 Type II GRBs</strong> based on the following criteria:</p>
+    <ul>
+      <li>Duration 𝑇<sub>90</sub> ≥ 2s</li>
+      <li>Consistency with the <strong>Amati relation</strong> for Type II GRBs</li>
+      <li>Peak flux 𝑃 ≥ 1 ph cm<sup>−2</sup> s<sup>−1</sup></li>
+    </ul>
+
+    <p>We explore two forms of the GRB Luminosity Function (LF):</p>
+    <ul>
+      <li><strong>Broken Power-Law (BPL)</strong> LF</li>
+      <li><strong>Triple Power-Law (TPL)</strong> LF</li>
+    </ul>
+
+    <p>Three evolution models are considered:</p>
+    <ul>
+      <li>No evolution</li>
+      <li>Luminosity evolution</li>
+      <li>Density evolution</li>
+    </ul>
+
+    <p><strong>Key findings:</strong></p>
+    <ul>
+      <li>The no evolution model is statistically ruled out.</li>
+      <li>Both luminosity and density evolution models fit the data well.</li>
+      <li>Unlike LGRBs (which prefer TPL), our Type II sample favors a <strong>Broken Power-Law LF</strong>.</li>
+    </ul>
+
+    <footer>
+      &copy; 2025 Nilanjana Bagchi — Powered by GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>

@@ -16,61 +16,68 @@
       background: #f8f9fa;
       color: #212529;
       line-height: 1.6;
-    }
-    .banner {
-      position: relative;
-      width: 100%;
-      height: 300px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Center_of_the_Milky_Way_Galaxy_IV_%E2%80%93_Composite.jpg') center center / cover no-repeat;
-    }
-    .banner::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4); /* optional dark overlay */
+      padding: 2rem;
     }
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
-      padding: 2rem;
+    }
+    .banner {
+      width: 100%;
+      height: 280px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/0/00/Center_of_the_Milky_Way_Galaxy_IV_%E2%80%93_Composite.jpg') center center / cover no-repeat;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
     }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       color: #343a40;
     }
+    p.lead {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-top: 2rem;
       color: #495057;
     }
-    p {
-      margin-bottom: 1rem;
-    }
-    .card-group {
-      margin-top: 1.5rem;
+
+    .card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
     .card {
-      display: block;
-      padding: 1rem;
-      border: 2px solid #001f3f;
-      border-radius: 8px;
+      padding: 2rem;
       background: #ffffff;
-      color: #001f3f;
-      font-weight: 600;
-      text-align: center;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
+      border: 2px solid #003366;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      text-align: left;
     }
     .card:hover {
-      background: #001f3f;
-      color: white;
-      transform: translateY(-3px);
+      transform: translateY(-4px);
     }
+    .card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      color: #003366;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #333;
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+
     footer {
       margin-top: 4rem;
       font-size: 0.9rem;
@@ -80,18 +87,41 @@
   </style>
 </head>
 <body>
-  <div class="banner"></div>
   <div class="container">
-    <h1>Nilanjana Bagchi Aurpa</h1>
-    <p>Cosmology Researcher | Python Nerd | Occasional Firestarter</p>
+    <div class="banner"></div>
+    <h1>Nilanjana Bagchi</h1>
+    <p class="lead">Cosmology Researcher | Python Nerd | Occasional Firestarter</p>
+    <p>I'm a physics undergrad doing independent research in cosmology, developing novel Python libraries, and teaching coding on the side. This page showcases my ongoing projects, publications, and tools.</p>
 
-    <p>I am an Undergraduate Physics student at Miranda House, University of Delhi doing research in Cosmology.This page showcases my ongoing projects, publications, and tools.
     <h2>🔬 Featured Work</h2>
-    <div class="card-group">
-      <a href="Dark Energy.html" class="card">Dark Energy</a>
-      <a href="https://nil-b0.github.io/GaussianProcess/" class="card">Gaussian Process</a>
-      <a href="Gamma Ray Bursts.html" class="card">Quantum Mechanics</a>
-      <a href="#" class="card">Gamma Ray Bursts</a>
+    <div class="card-grid">
+      <div class="card">
+        <a href="dark-energy.html">
+          <h3>Dark Energy</h3>
+          <p>Statistical reconstructions of H(z), q(z), and w(z) using Pantheon+, BAO, and CC datasets.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="https://nil-b0.github.io/GaussianProcess/">
+          <h3>Gaussian Process</h3>
+          <p>Non-parametric modeling of cosmological observables using custom GPR tools in Python.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="gamma-ray-bursts.html">
+          <h3>Gamma Ray Bursts</h3>
+          <p>GRB luminosity functions, evolution models, and machine learning in astrophysical transients.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="quantum-mechanics.html">
+          <h3>Quantum Mechanics</h3>
+          <p>Conceptual and numerical exploration of quantum systems with applications to cosmology.</p>
+        </a>
+      </div>
     </div>
 
     <footer>
